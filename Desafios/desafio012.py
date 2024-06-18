@@ -2,4 +2,4 @@
 
 precoProduto = float(input('digite o valor do produto: '))
 
-print('o valor do produto com 5% de desconto e: {}'.format(precoProduto - (precoProduto * 0.05)))
+print('o valor do produto com 5% de desconto e: {}'.format (precoProduto-(precoProduto*5/100)))
