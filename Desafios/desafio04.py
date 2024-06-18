@@ -1,4 +1,10 @@
 algoFoiDgitado = input('digite algo: ')
 
-print(algoFoiDgitado.isalnum() or algoFoiDgitado.isalpha() or algoFoiDgitado.isdecimal() or algoFoiDgitado.isnumeric() or algoFoiDgitado.isprintable() or algoFoiDgitado.isspace() or algoFoiDgitado.isupper() or algoFoiDgitado.islower() or algoFoiDgitado.istitle() or algoFoiDgitado.isupper() or algoFoiDgitado.islower())
-print(type(algoFoiDgitado))
+print('O tipo primitivo desse valor e: ', type(algoFoiDgitado))
+print('So tem espaços? ', algoFoiDgitado.isspace())
+print('E um numero? ', algoFoiDgitado.isnumeric())
+print('E alfabetico? ', algoFoiDgitado.isalpha())
+print('E alfanumerico? ', algoFoiDgitado.isalnum())
+print('Esta em maisculas? ', algoFoiDgitado.isupper())
+print('Esta em minusculas? ', algoFoiDgitado.islower())
+print('Esta capitalizada? ', algoFoiDgitado.istitle())
