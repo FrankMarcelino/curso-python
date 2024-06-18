@@ -1,3 +1,5 @@
+#desafio 04
+
 algoFoiDgitado = input('digite algo: ')
 
 print('O tipo primitivo desse valor e: ', type(algoFoiDgitado))
