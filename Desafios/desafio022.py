@@ -6,7 +6,7 @@
 # Quantas letras ao todo(sem considerar espacos)
 # Quantas letras no primeiro nome
 
-nome = input('digite seu nome: ').strip()
+nome = str(input('digite seu nome: ').strip())
 
 print('seu nome em maiusculas e: {}'.format(nome.upper()))
 print('seu nome em minusculas e: {}'.format(nome.lower()))
