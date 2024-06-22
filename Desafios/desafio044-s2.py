@@ -28,6 +28,8 @@ elif formaDePagamento == 3: #forma de pagamento em 2x ou mais no cartão
   if parcelas >= 2:
     print('você parará em {}x de R${:.2f} com juros'.format(parcelas, precoPorParcela))
     print('o valor final do seu produto e: R${:.2f}'.format(precoPorParcela * parcelas))
+  else:
+    print('o valor final do seu produto e: R${:.2f}'.format(preco))
 else:
   print('forma de pagamento invalida')
   
