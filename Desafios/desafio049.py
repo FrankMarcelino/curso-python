@@ -7,5 +7,5 @@ numero = int(input('digite um numero: '))
 print('a tabuada de {} e:'.format(numero))
 
 for c in range(1, 11):
-  print('{} x {} = {}'.format(numero, c, numero * c))   
+  print('{} x {:2} = {}'.format(numero, c, numero * c))   
 
