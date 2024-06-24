@@ -7,3 +7,4 @@ razao = int(input('digite a razao: '))
 
 for c in range(primeiroTermo, (primeiroTermo + (10 * razao)), razao):
   print(c, end=' ')
+
