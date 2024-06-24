@@ -13,12 +13,15 @@ print('Vou pensar em um numero entre 0 e 10. Tente adivinhar...')
 print('-=-' * 20)
 
 palpite = 0
+jogadas = 1
 while palpite != computador:
-  palpite = int(input('\n Em que numero eu pensei? '))
+  palpite = int(input('TENTATIVA {} Em que numero eu pensei? '.format(jogadas)))
   print('PROCESSANDO...')
   sleep(3)
   if palpite == computador:
-    print('\33[32m PARABENS! Voce acertou!')
+    print('\33[32m PARABENS! Voce acertou! Você jogou {} vezes para poder acertar'.format(jogadas))
+    
   else:
+    jogadas += 1
     print('\33[33m GANHEI! Eu pensei o {} e nao o {}'.format(computador, palpite))
     
