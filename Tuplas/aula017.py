@@ -20,8 +20,10 @@ while True:
   
 
   elif op == 2:
-    print('a lista de nomes e: {}'.format(listaNomes))
     print('Consultando...')
+    for nome in listaNomes:
+      print('{}'.format(nome))
+      
  
 
   elif op == 3:
