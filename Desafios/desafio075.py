@@ -10,13 +10,23 @@
 
 numeros = (int(input('digite um valor: ')), int(input('digite um valor: ')), int(input('digite um valor: ')), int(input('digite um valor: ')))
 
-print('O nove apareceu {} vezes'.format(numeros.count(9)))
-print('o primeiro nove foi digitado na posição {}'.format(numeros.index(3) + 1))
-print('os pares digitados foram: ', end='')
-for n in numeros:
-  if n % 2 == 0:
-    print(n, end=' ')
+if 9 in numeros:
+  print('o valor 9 apareceu {} vezes'.format(numeros.count(9)))
 
+else:
+  print('o valor 9 nao foi digitado')
+
+if 3 in numeros:  
+  print('o valor 3 apareceu na {}° posição'.format(numeros.index(3) + 1))
+else:
+  print('o valor 3 nao foi digitado')  
+
+for c in numeros:
+  if c % 2 == 0:
+    print('os valores pares digitados foram: {}'.format(c))
+  
 
     
+
+
 
