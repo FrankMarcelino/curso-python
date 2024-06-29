@@ -7,5 +7,6 @@ valores = []
 for c in range(0, 5):
   valores.append(int(input('digite um valor: ')))
 
+print('os valores digitados foram: {}'.format(valores))
 print('o maior valor digitado foi: {} e sua posicao foi: {}'.format(max(valores), valores.index(max(valores))))
 print('o menor valor digitado foi: {} e sua posicao foi: {}'.format(min(valores), valores.index(min(valores))))
