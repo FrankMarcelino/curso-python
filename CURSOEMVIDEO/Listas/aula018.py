@@ -2,8 +2,15 @@
 
 # lista compostas 
 
-galera = [['João', 19], ['Ana', 33], ['Joaquim', 13], ['Maria', 45]]
+galera = list()
+dado = list()
+while True:
+  dado.append(str(input('nome: ')))
+  dado.append(float(input('peso: ')))
+  galera.append(dado[:])
+  dado.clear()
+  resp = str(input('quer continuar? [S/N] '))
+  if resp in 'Nn':
+    break
 print(galera)
-print(galera[0])
-print(galera[0][0])
-print(galera[2][1])
+print(f'foram cadastrados {len(galera)} pessoas')
