@@ -26,12 +26,12 @@ while True:
 
 print(f'foram cadastradas {len(pessoas)} pessoas')
 
-print(f'as pessoas mais pesadas foram: ', end='')
+print(f'a pessoa mais pesada foi: ', end='')
 for p in pessoas:
   if p[1] == maiorPeso:
     print(f'{p[0]}', end=' ')
 
-print(f'\nas pessoas mais leves foram: ', end='')
+print(f'\na pessoa mais leve foi: ', end='')
 for p in pessoas:
   if p[1] == menorPeso:
     print(f'{p[0]}', end=' ')
