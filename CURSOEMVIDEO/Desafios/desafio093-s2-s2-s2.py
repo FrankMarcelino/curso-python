@@ -9,12 +9,18 @@ partidas = int(input('digite o total de partidas jogadas: '))
 jogador['gols'] = []
 jogador['total'] = 0
 for c in range(0, partidas):
-  gols = int(input('digite a quantidade de gols: '))
+  gols = int(input('digite a quantidade de gols na partida {}: ' .format(c+1)))
   jogador['gols'].append(gols)
   jogador['total'] += gols
 
+print('-=' * 30)
 print(jogador)
-
-for k, v in jogador.items():
-  print(f'{k} tem o valor {v}')
+print('-=' * 30)
+print('e fez a media de {} gols por partida.'.format(jogador['total']/len(jogador['gols'])))
+print('fez o total de {} gols'.format(jogador['total']))
+print('-=' * 30)
+print('o jogador {} jogou {} partidas.'.format(jogador['nome'], len(jogador['gols'])))
+for k, v in enumerate(jogador['gols']):
+  print('=> Na partida {} ele fez {} gols.' .format(k+1, v))
   
+
