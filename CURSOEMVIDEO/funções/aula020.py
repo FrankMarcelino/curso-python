@@ -6,3 +6,4 @@ def msgPadrao (msg):
   print('-'*30)
 
 msgPadrao("ola mundo")
+
