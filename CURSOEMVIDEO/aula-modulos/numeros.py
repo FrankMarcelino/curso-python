@@ -1,10 +1,7 @@
-def fatorial(num):
-  f = 1
-  for c in range(num, 0, -1):
-    f *= c
-  return f
-
+import uteis
 
 num = int(input('digite um numero: '))
-fat = fatorial(num)
+fat = uteis.fatorial(num)
 print(f'o fatorial de {num} e: {fat}')
+print(f'o dobro de {num} e: {uteis.dobro(num)}')
+print(f'o triplo de {num} e: {uteis.triplo(num)}')
