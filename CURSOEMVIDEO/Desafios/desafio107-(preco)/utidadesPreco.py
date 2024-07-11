@@ -15,3 +15,6 @@ def dobrar(preco=0):
 
 def metade(preco=0):
   print(f'A metade de R${preco} fica R${preco / 2}.')
+  
+def moeda(preco=0, moeda='R$'):
+  return f'{moeda}{preco:.2f}'.replace('.', ',')
