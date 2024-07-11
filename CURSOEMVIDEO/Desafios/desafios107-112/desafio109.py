@@ -5,4 +5,4 @@
 import utidadesPreco
 
 preco = float(input('digite o preço: R$'))
-print(f'A metade de {preco} fica {utidadesPreco.metade(preco)}.')
+print('a metade do preço formatado com True: {}'.format(utidadesPreco.metade(preco, True)))
