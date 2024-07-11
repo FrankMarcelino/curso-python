@@ -1,4 +1,4 @@
-import utidadesPreco
+from utilidade.moeda import utilidadePreco
 
 print('-' * 30)
 print('{:^30}'.format('verficador de preço'))
@@ -18,14 +18,14 @@ while True:
   opcao = int(input('Qual a sua opção? '))
   if opcao == 1:
     porcentagem = int(input('Qual a porcentagem? '))
-    print(utidadesPreco.aumentar(preco, porcentagem, True))
+    print(utilidadePreco.aumentar(preco, porcentagem, True))
   elif opcao == 2:
     porcentagem = int(input('Qual a porcentagem? '))
-    print(utidadesPreco.diminuir(preco, porcentagem, True))
+    print(utilidadePreco.diminuir(preco, porcentagem, True))
   elif opcao == 3:
-    print(utidadesPreco.dobrar(preco, True))
+    print(utilidadePreco.dobrar(preco, True))
   elif opcao == 4:
-    print(utidadesPreco.metade(preco, True))
+    print(utilidadePreco.metade(preco, True))
   elif opcao == 5:
     break
   else:
