@@ -18,14 +18,14 @@ while True:
   opcao = int(input('Qual a sua opção? '))
   if opcao == 1:
     porcentagem = int(input('Qual a porcentagem? '))
-    utidadesPreco.aumentar(preco, porcentagem)
+    utidadesPreco.aumentar(preco, porcentagem, True)
   elif opcao == 2:
     porcentagem = int(input('Qual a porcentagem? '))
-    utidadesPreco.diminuir(preco, porcentagem)
+    utidadesPreco.diminuir(preco, porcentagem, True)
   elif opcao == 3:
-    utidadesPreco.dobrar(preco)
+    utidadesPreco.dobrar(preco, True)
   elif opcao == 4:
-    utidadesPreco.metade(preco)
+    utidadesPreco.metade(preco, True)
   elif opcao == 5:
     break
   else:
