@@ -1,12 +1,12 @@
-def aumentar(preco=0, porcentagem=0 formatado=False):
+def aumentar(preco=0, porcentagem=0, formatado=False):
   res = preco + (preco * porcentagem / 100)
   return res if formatado is False else moeda(res)
   
-def diminuir(preco=0, porcentagem=0 formatado=False):
+def diminuir(preco=0, porcentagem=0, formatado=False):
   res = preco - (preco * porcentagem / 100)
   return res if formatado is False else moeda(res)
   
-def dobrar(preco=0 formatado=False):
+def dobrar(preco=0, formatado=False):
   res = preco * 2
   return res if formatado is False else moeda(res)
   
